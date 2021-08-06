@@ -24,9 +24,26 @@ testInput.addEventListener('click', function () {
 
 
 // 足し算を行う。
-const plus = document.getElementById('additionBtn')
-plus.addEventListener('click',function(){
+document.getElementById('additionBtn').addEventListener('click',function(){
   output.value = op1 + op2;
+});
+// 引き算を行う。
+document.getElementById('subtractionBtn').addEventListener('click',function(){
+  output.value = op1 - op2;
+});
+// 掛算を行う。
+document.getElementById('multiplicationBtn').addEventListener('click',function(){
+  output.value = op1 * op2;
+});
+// 割り算を行う。
+document.getElementById('divisionBtn').addEventListener('click',function(){
+  output.value = op1 / op2;
+});
+// 割り算を行う。
+document.getElementById('clearBtn').addEventListener('click',function(){
+  output.value = null;
+  input1.value = null;
+  input2.value = null;
 });
 
 
