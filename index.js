@@ -41,6 +41,8 @@ document.getElementById('clearBtn').addEventListener('click', function () {
   output.value = null;
   input1.value = null;
   input2.value = null;
+  op1 = 0;
+  op2 = 0;
 });
 
 
