@@ -32,13 +32,17 @@ document.getElementById('subtractionBtn').addEventListener('click', function () 
 
 // 掛算を行う。
 document.getElementById('multiplicationBtn').addEventListener('click', function () { output.value = op1 * op2; });
+
 // 割り算を行う。
 document.getElementById('divisionBtn').addEventListener('click', function () { output.value = op1 / op2; });
+
 // 割り算を行う。
 document.getElementById('clearBtn').addEventListener('click', function () {
   output.value = null;
   input1.value = null;
   input2.value = null;
 });
+
+
 
 
