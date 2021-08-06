@@ -7,7 +7,8 @@ const output = document.getElementById('answer');
 let op1 = 0;
 let op2 = 0;
 
-// 入力値の取得
+// 入力値の取得イベント
+// 計算を実行するときに実行するため。
 input1.addEventListener('change', function () {
   op1 = parseInt(input1.value);
 })
@@ -24,23 +25,17 @@ testInput.addEventListener('click', function () {
 
 
 // 足し算を行う。
-document.getElementById('additionBtn').addEventListener('click',function(){
-  output.value = op1 + op2;
-});
+document.getElementById('additionBtn').addEventListener('click', function () { output.value = op1 + op2; });
+
 // 引き算を行う。
-document.getElementById('subtractionBtn').addEventListener('click',function(){
-  output.value = op1 - op2;
-});
+document.getElementById('subtractionBtn').addEventListener('click', function () { output.value = op1 - op2; });
+
 // 掛算を行う。
-document.getElementById('multiplicationBtn').addEventListener('click',function(){
-  output.value = op1 * op2;
-});
+document.getElementById('multiplicationBtn').addEventListener('click', function () { output.value = op1 * op2; });
 // 割り算を行う。
-document.getElementById('divisionBtn').addEventListener('click',function(){
-  output.value = op1 / op2;
-});
+document.getElementById('divisionBtn').addEventListener('click', function () { output.value = op1 / op2; });
 // 割り算を行う。
-document.getElementById('clearBtn').addEventListener('click',function(){
+document.getElementById('clearBtn').addEventListener('click', function () {
   output.value = null;
   input1.value = null;
   input2.value = null;
