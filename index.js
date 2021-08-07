@@ -8,7 +8,7 @@ let op1 = 0;
 let op2 = 0;
 
 // 入力値の取得イベント
-// 計算を実行するときに実行するため。
+// 計算を実行するときに取り出すため分離。
 input1.addEventListener('change', function () {
   op1 = parseInt(input1.value);
 })
@@ -24,16 +24,16 @@ testInput.addEventListener('click', function () {
 });
 
 
-// 足し算を行う。
+// クリックで加算
 document.getElementById('additionBtn').addEventListener('click', function () { output.value = op1 + op2; });
 
-// 引き算を行う。
+// クリックで減算
 document.getElementById('subtractionBtn').addEventListener('click', function () { output.value = op1 - op2; });
 
-// 掛算を行う。
+// クリックで乗算
 document.getElementById('multiplicationBtn').addEventListener('click', function () { output.value = op1 * op2; });
 
-// 割り算を行う。
+// クリックで割算
 document.getElementById('divisionBtn').addEventListener('click', function () { output.value = op1 / op2; });
 
 // 割り算を行う。
