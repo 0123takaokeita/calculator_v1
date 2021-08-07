@@ -34,7 +34,10 @@ document.getElementById('subtractionBtn').addEventListener('click', function () 
 document.getElementById('multiplicationBtn').addEventListener('click', function () { output.value = op1 * op2; });
 
 // クリックで割算
-document.getElementById('divisionBtn').addEventListener('click', function () { output.value = op1 / op2; });
+document.getElementById('divisionBtn').addEventListener('click', function () {
+    if(op1 == 0 || op2 == 0) output.value = 0;
+    else output.value = op1 / op2; 
+});
 
 // 割り算を行う。
 document.getElementById('clearBtn').addEventListener('click', function () {
