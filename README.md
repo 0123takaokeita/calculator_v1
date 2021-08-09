@@ -1,4 +1,4 @@
-# culcullator_v1
+# culculator_v1
 
 - 動作確認
 
